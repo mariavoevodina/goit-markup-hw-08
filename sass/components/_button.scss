@@ -1,0 +1,72 @@
+.button {
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 136px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.button-box {
+  display: flex;
+  justify-content: center;
+}
+
+.button-box__item {
+  margin-left: 8px;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  padding: 6px 22px;
+  background-color: #F5F4FA;
+  cursor: pointer;
+  font-weight: 500;
+
+}
+
+.button-box__item.primary,
+.button.primary {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  border: transparent;
+}
+
+.button-box__item.secondary,
+.button.secondary {
+  color: var(--primary-text-color);
+  background-color: var(--button-bg-color);
+  border: transparent;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    border: transparent;
+  }
+
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    border: transparent;
+
+  }
+}
+
+// .button-box__item.secondary:hover,
+// .button-box__item.secondary:focus,
+// .button.secondary:hover,
+// .button.secondary:focus {
+//   color: var(--white-color);
+//   background-color: var(--accent-color);
+//   border: transparent;
+
+// }

@@ -1,0 +1,51 @@
+.hero {
+  background-color: #2F303A;
+  text-align: center;
+
+}
+
+.overlay {
+  height: 400px;
+  outline: 1ps solid black;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/background/background.jpg);
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+  }
+}
+
+.hero__box {
+  max-width: 360px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 118px 0;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    padding: 200px 0;
+  }
+
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  }
+}
