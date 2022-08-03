@@ -105,6 +105,72 @@
 
 	<main>
 		<section class="hero">
+			<div class="backdrop is-hidden" data-modal>
+				<div class="modal">
+			
+			
+					<button data-modal-close type="button" class="button-close">
+						<svg class="close-icon" width="11" height="11">
+							<use href="./images/icons.svg#icon-close-black-18dp-2-1">
+							</use>
+						</svg></button>
+			
+			
+					<form class="form" autocomplete="off">
+			
+						<p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
+			
+						<div class="form__field">
+							<input class="form__input" type="text" name="username" id="username" />
+							<label class="form__label" for="username">Имя</label>
+							<svg class="form__icon" width="20" height="20">
+								<use href="./images/icons.svg#icon-person-black"></use>
+							</svg>
+						</div>
+			
+						<div class="form__field">
+			
+							<input class="form__input" type="tel" name="phone_number" id="phone-number" />
+							<label class="form__label" for="phone-number">Телефон</label>
+							<svg class="form__icon" width="20" height="20">
+								<use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+							</svg>
+						</div>
+			
+						<div class="form__field">
+			
+							<input class="form__input" type="email" name="user-email" id="user-email" />
+							<label class="form__label" for="user-email">Почта</label>
+							<svg class="form__icon" width="20" height="20">
+								<use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+							</svg>
+						</div>
+			
+						<div class="form__field">
+			
+							<textarea class="form__input" name="comments" id="comments" rows="5" placeholder="Введите текст"></textarea>
+							<label class="form__label" for="comments">Комментарий
+							</label>
+						</div>
+			
+			
+						<div class="checkbox">
+			
+							<label class="checkbox__label">
+								<input type="checkbox" class="checkbox__input">
+								<span class="checkbox__icon"></span>
+								<div>Соглашаюсь с рассылкой и принимаю
+									<a class="checkbox__link" href="">&nbsp;Условия договора</a>
+								</div>
+							</label>
+						</div>
+			
+						<button class="button-submit" type="submit">Отправить</button>
+			
+					</form>
+			
+				</div>
+			</div>
 			<div class="overlay">
 				<div class="hero__box container">
 					<h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -112,72 +178,7 @@
 
 					<button data-modal-open type="button" class="button primary">Заказать услугу</button>
 
-					<div class="backdrop is-hidden" data-modal>
-						<div class="modal">
-
-
-							<button data-modal-close type="button" class="button-close">
-								<svg class="close-icon" width="11" height="11">
-									<use href="./images/icons.svg#icon-close-black-18dp-2-1">
-									</use>
-								</svg></button>
-
-
-							<form class="form" autocomplete="off">
-
-								<p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
-
-								<div class="form__field">
-									<input class="form__input" type="text" name="username" id="username" />
-									<label class="form__label" for="username">Имя</label>
-									<svg class="form__icon" width="20" height="20">
-										<use href="./images/icons.svg#icon-person-black"></use>
-									</svg>
-								</div>
-
-								<div class="form__field">
-
-									<input class="form__input" type="tel" name="phone_number" id="phone-number" />
-									<label class="form__label" for="phone-number">Телефон</label>
-									<svg class="form__icon" width="20" height="20">
-										<use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
-									</svg>
-								</div>
-
-								<div class="form__field">
-
-									<input class="form__input" type="email" name="user-email" id="user-email" />
-									<label class="form__label" for="user-email">Почта</label>
-									<svg class="form__icon" width="20" height="20">
-										<use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-									</svg>
-								</div>
-
-								<div class="form__field">
-
-									<textarea class="form__input" name="comments" id="comments" rows="5"
-										placeholder="Введите текст"></textarea>
-									<label class="form__label" for="comments">Комментарий
-									</label>
-								</div>
-
-
-								<div class="checkbox">
-
-									<label class="checkbox__label">
-										<input type="checkbox" class="checkbox__input">
-										<span class="checkbox__icon"></span>
-										Соглашаюсь с рассылкой и принимаю
-										<a class="checkbox__link" href="">&nbsp;Условия договора</a>
-									</label>
-								</div>
-
-								<button class="button-submit" type="submit">Отправить</button>
-
-							</form>
-
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</section>
@@ -433,10 +434,7 @@
 			</div>
 		</section>
 
-		<!-- 
-
-		
-
+	
 		<section class="clients">
 			<div class="container">
 				<h2 class="section-title">Постоянные клиенты</h2>
@@ -474,14 +472,17 @@
 				</ul>
 
 			</div>
-		</section> -->
+		</section>
 	</main>
 
 
 
-	<!-- <footer class="footer">
+	<footer class="footer">
 		<div class="container">
 			<div class="footer__info">
+			
+
+				<div class="footer-box">
 				<div class="address">
 					<a class="logo link footer__logo" href="">Web<span>Studio</span></a>
 					<address class="footer__address">
@@ -534,25 +535,28 @@
 							</a>
 						</li>
 					</ul>
-				</div>
-
-				<form class="footer-form">
-					<p class="footer-form__title">Подпишитесь на рассылку</p>
-					<div class="footer-form__items">
-						<input class="footer-form__placeholder" type="email" name="footer-email" id="footer-email"
-							placeholder="E-mail">
-						<button class="footer-form__button" type="submit">Подписаться
-							<svg class="footer-form__icon" width="24" height="24">
-								<use href="./images/icons.svg#icon-icon-send"></use>
-							</svg></button>
+					</div>
 					</div>
 
-				</form>
+					<form class="footer-form">
+						<p class="footer-form__title">Подпишитесь на рассылку</p>
+						<div class="footer-form__items">
+							<input class="footer-form__placeholder" type="email" name="footer-email" id="footer-email" placeholder="E-mail">
+							<button class="footer-form__button  type="submit">Подписаться
+								<svg class="footer-form__icon" width="24" height="24">
+									<use href="./images/icons.svg#icon-icon-send"></use>
+								</svg></button>
+						</div>
+					
+					</form>
+				</div>
+
+			
 
 			</div>
 
 		</div>
-	</footer> -->
+	</footer>  
 
 	<script src="./js/modal.js"></script>
 	<script src="./js/mobile-menu.js"></script>

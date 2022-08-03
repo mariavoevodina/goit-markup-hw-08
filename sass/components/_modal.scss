@@ -19,22 +19,28 @@
 
 .modal {
   position: absolute;
-  margin: 93px 15px 94px 15px;
-  width: 450px;
-  height: 609px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 93px 0 0;
+
+  max-width: 90%;
+  width: 100%;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0px 2px rgba(0, 0, 0, 0.2);
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 528px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
     height: 581px;
   }
+
+
 }
 
 
@@ -67,20 +73,12 @@
 
 
 .form {
-  width: 450px;
-  height: 609px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 0 20px 20px;
 
-  @media screen and (min-width: 1200px) {
-    width: 528px;
-    height: 581px;
-
-  }
-
+  @media screen and (min-width: 480px) {
+      padding: 0 40px 40px;
+  
+    }
 }
 
 .form__field {
@@ -200,7 +198,7 @@
 .checkbox {
   margin: 0 0 30px;
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     margin: 0 0 30px 10px;
   }
 
@@ -238,35 +236,33 @@
   border-radius: 2px;
   width: 16px;
   height: 15px;
-  margin-right: 7px;
+  margin-right: 8px;
+  min-width: 16px;
 }
 
 .checkbox__link {
   color: #2196F3;
   font-weight: 400;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 18px;
   letter-spacing: 0.03em;
 
   @media screen and (min-width: 1200px) {
-      font-size: 14px;
-      line-height: 24px;
-    }
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .button-submit {
 
-  display: inline-block;
+  display: block;
   padding: 10px 55px;
-  margin: 0;
+  margin: 0 auto;
   width: 200px;
   height: 50px;
-
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.06em;
   border-radius: 4px;
   cursor: pointer;

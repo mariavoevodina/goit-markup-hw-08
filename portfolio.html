@@ -15,8 +15,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 		rel="stylesheet" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-	<link rel="stylesheet" href="./css/styles.css " />
 	<link rel="stylesheet" href="./css/main.min.css" />
+
+
 </head>
 
 
@@ -24,13 +25,13 @@
 	<header class="header">
 		<div class="container header-container">
 			<a class="logo link" href="">Web<span>Studio</span></a>
-			<nav>
-				<ul class="site-nav list">
-					<li class="site-nav__item"><a href="./index.html" class="site-nav__link  link">Студия</a></li>
-					<li class="site-nav__item"><a href="./portfolio.html " class="site-nav__link current link">Портфолио</a></li>
-					<li class="site-nav__item"><a href="" class="site-nav__link link">Контакты</a></li>
-				</ul>
-			</nav>
+
+			<ul class="site-nav list">
+				<li class="site-nav__item"><a href="./index.html " class="site-nav__link  link">Студия</a></li>
+				<li class="site-nav__item"><a href="" class="site-nav__link current link">Портфолио</a></li>
+				<li class="site-nav__item"><a href="" class="site-nav__link link">Контакты</a></li>
+			</ul>
+
 			<div class="contact">
 				<a href="mailto:info@devstudio.com" class="contact__link link">
 					<svg class="contact__icon" width="16" height="12">
@@ -44,9 +45,59 @@
 				</a>
 			</div>
 		</div>
-
 	</header>
 
+
+	<!-- header mobile -->
+	<header class="header-mobile">
+		<div class="container">
+			<nav class="nav">
+				<a class="logo link" href="">Web<span>Studio</span></a>
+
+				<button type="button" class="menu-btn" data-menu-button area-expanded="false">
+					<svg width="24" height="16" aria-label="переключатель мобильного меню">
+						<use href="./images/icons.svg#icon-menu_24px"></use>
+
+					</svg>
+				</button>
+
+				<div class="menu-container is-hidden-menu" data-menu>
+					<button type="button" class="menu-btn-close" data-menu-button-close area-expanded="false">
+						<svg width="19" height="19" aria-label="переключатель мобильного меню">
+							<use href="./images/icons.svg#icon-close_24px"></use>
+						</svg>
+					</button>
+					<div class="menu-info">
+						<ul class="site-nav-mob list">
+							<li class="site-nav-mob__item">
+								<a href="" class="site-nav-mob__link current-mob  link">Студия</a>
+							</li>
+							<li class="site-nav-mob__item">
+								<a href="./portfolio.html " class="site-nav-mob__link  link">Портфолио</a>
+							</li>
+							<li class="site-nav-mob__item">
+								<a href="" class="site-nav-mob__link link">Контакты</a>
+							</li>
+						</ul>
+
+						<div class="contact-mob">
+							<a href="tel:+380961111111" class="contact-mob__tel link  ">+38 096 111 11 11</a>
+							<a href="mailto:info@devstudio.com" class="contact-mob__email link">info@devstudio.com</a>
+
+						</div>
+
+						<ul class="list-social list">
+							<li class="list-social__item"><a href="" class="list-social_link link">Instagram</a></li>
+							<li class="list-social__item"><a href="" class="list-social_link link">Twitter</a></li>
+							<li class="list-social__item"><a href="" class="list-social_link link">Facebook</a></li>
+							<li class="list-social__item"><a href="" class="list-social_link link">LinkedIn</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</nav>
+		</div>
+	</header>
 
 	<main>
 
@@ -66,7 +117,8 @@
 						<a href="" class="link portfolio-box__link">
 
 							<div class="portfolio-thumb">
-								<img src="./images/portfolio/img1.png" width="370" alt="дисплей" />
+								<img srcset="./images/portfolio/img1.jpg 1x,
+								             ./images/portfolio/img1-2x.jpg 2x" src="./images/portfolio/img1.png" width="370" alt="дисплей">
 
 								<div class="portfolio-overlay">
 									<p class="portfolio-overlay__descr">Ресурс предлагает комплексные предложения с разным уровнем
@@ -88,7 +140,8 @@
 						<a href="" class="link portfolio-box__link">
 
 							<div class="portfolio-thumb">
-								<img src="./images/portfolio/img2.png" width="370" alt="баскетбол" />
+								<img srcset="./images/portfolio/design.jpg 1x,
+								             ./images/portfolio/design2x.jpg 2x"  src="./images/portfolio/design.jpg" width="370" alt="баскетбол" />
 
 								<div class="portfolio-overlay">
 									<p class="portfolio-overlay__descr">Ресурс предлагает комплексные предложения с разным уровнем
@@ -107,7 +160,8 @@
 					<li class="portfolio-box__card">
 						<a href="" class="link portfolio-box__link">
 							<div class="portfolio-thumb">
-								<img src="./images/portfolio/img3.png" width="370" alt="морепродукты" />
+								<img srcset="./images/portfolio/seafood.jpg 1x,
+								             ./images/portfolio/seafood2x.jpg 2x" src="./images/portfolio/seafood.jpg" width="370" alt="морепродукты" />
 								<div class="portfolio-overlay">
 									<p class="portfolio-overlay__descr">Ресурс предлагает комплексные предложения с разным уровнем
 										функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
@@ -125,7 +179,8 @@
 						<a href="" class="link portfolio-box__link">
 
 							<div class="portfolio-thumb">
-								<img src="./images/portfolio/img4.png" width="370" alt="наушники" />
+								<img srcset="./images/portfolio/headphones.jpg 1x,
+								             ./images/portfolio/headphones2x.jpg 2x" src="./images/portfolio/headphones.jpg" width="370" alt="наушники" />
 								<div class="portfolio-overlay">
 									<p class="portfolio-overlay__descr">Ресурс предлагает комплексные предложения с разным уровнем
 										функционала и
@@ -144,7 +199,8 @@
 					<li class="portfolio-box__card">
 						<a href="" class="link portfolio-box__link">
 							<div class="portfolio-thumb">
-								<img src="./images/portfolio/img5.png" width="370" alt="коробки" />
+								<img srcset="./images/portfolio/app.jpg 1x,
+								             ./images/portfolio/app2x.jpg 2x" src="./images/portfolio/app.jpg" width="370" alt="коробки" />
 								<div class="portfolio-overlay">
 									<p class="portfolio-overlay__descr">Ресурс предлагает комплексные предложения с разным уровнем
 										функционала и
@@ -165,7 +221,8 @@
 						<a href="" class="link portfolio-box__link">
 
 							<div class="portfolio-thumb">
-								<img src="./images/portfolio/img6.png" width="370" alt="монитор" />
+								<img srcset="./images/portfolio/web-site.jpg 1x,
+								             ./images/portfolio/web-site2x.jpg 2x"  src="./images/portfolio/web-site.jpg" width="370" alt="монитор" />
 								<div class="portfolio-overlay">
 									<p class="portfolio-overlay__descr">Ресурс предлагает комплексные предложения с разным уровнем
 										функционала и
@@ -184,7 +241,8 @@
 					<li class="portfolio-box__card">
 						<a href="" class="link portfolio-box__link">
 							<div class="portfolio-thumb">
-								<img src="./images/portfolio/img7.png" width="370" alt="журнал" />
+								<img srcset="./images/portfolio/magazine.jpg 1x,
+								             ./images/portfolio/magazine2x.jpg 2x" src="./images/portfolio/magazine.jpg" width="370" alt="журнал" />
 								<div class="portfolio-overlay">
 									<p class="portfolio-overlay__descr">Ресурс предлагает комплексные предложения с разным уровнем
 										функционала и
@@ -203,7 +261,8 @@
 					<li class="portfolio-box__card">
 						<a href="" class="link portfolio-box__link">
 							<div class="portfolio-thumb">
-								<img src="./images/portfolio/img8 (2).png" width="370" alt="тег" />
+								<img srcset="./images/portfolio/marketing.jpg 1x,
+								             ./images/portfolio/marketing2x.jpg 2x" src="./images/portfolio/marketing.jpg" width="370" alt="тег" />
 								<div class="portfolio-overlay">
 									<p class="portfolio-overlay__descr">Ресурс предлагает комплексные предложения с разным уровнем
 										функционала и
@@ -223,7 +282,8 @@
 						<a href="" class="link portfolio-box__link">
 
 							<div class="portfolio-thumb">
-								<img src="./images/portfolio/img9.png" width="370" alt="ноутбук" />
+								<img srcset="./images/portfolio/business.jpg 1x,
+								             ./images/portfolio/business2x.jpg 2x" src="./images/portfolio/business.jpg" width="370" alt="ноутбук" />
 								<div class="portfolio-overlay">
 									<p class="portfolio-overlay__descr">Ресурс предлагает комплексные предложения с разным уровнем
 										функционала и
@@ -246,77 +306,88 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer__info">
-				<div class="address">
-					<a class="logo link footer__logo" href="">Web<span>Studio</span></a>
-					<address class="footer__address">
-						<p class="footer__street">г. Киев, пр-т Леси Украинки, 26</p>
-
-						<ul class="list">
-							<li class="footer__item"><a href="mailto:info@devstudio.com" class="footer__link">info@devstudio.com</a>
+	
+	
+				<div class="footer-box">
+					<div class="address">
+						<a class="logo link footer__logo" href="">Web<span>Studio</span></a>
+						<address class="footer__address">
+							<p class="footer__street">г. Киев, пр-т Леси Украинки, 26</p>
+	
+							<ul class="list">
+								<li class="footer__item"><a href="mailto:info@devstudio.com" class="footer__link">info@devstudio.com</a>
+								</li>
+								<li class="footer__item"><a href="tel:+380961111111" class="footer__link">+38 096 111 11
+										11</a>
+								</li>
+							</ul>
+						</address>
+					</div>
+	
+	
+					<div class="join">
+						<p class="join__title">ПРИСОЕДИНЯЙТЕСЬ</p>
+	
+						<ul class="join__list list">
+							<li class="join__item">
+								<a class="join__link link" href="">
+									<svg class="join__icon" width="20" height="20">
+										<use href="./images/icons.svg#icon-instagram-2"></use>
+									</svg>
+								</a>
 							</li>
-							<li class="footer__item"><a href="tel:+380961111111" class="footer__link">+38 096 111 11
-									11</a>
+	
+							<li class="join__item">
+								<a class="join__link link" href="">
+									<svg class="join__icon" width="20" height="20">
+										<use href="./images/icons.svg#icon-twitter-1"></use>
+								</a>
+								</svg>
+							</li>
+	
+							<li class="join__item">
+								<a class="join__link link" href="">
+									<svg class="join__icon" width="20" height="20">
+										<use href="./images/icons.svg#icon-facebook-1"></use>
+									</svg>
+								</a>
+							</li>
+	
+							<li class="join__item">
+								<a class="join__link link" href="">
+									<svg class="join__icon" width="20" height="20">
+										<use href="./images/icons.svg#icon-linkedin-1"></use>
+									</svg>
+								</a>
 							</li>
 						</ul>
-					</address>
+					</div>
 				</div>
-
-
-				<div class="join">
-					<p class="join__title">ПРИСОЕДИНЯЙТЕСЬ</p>
-
-					<ul class="join__list list">
-						<li class="join__item">
-							<a class="join__link link" href="">
-								<svg class="join__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-instagram-2"></use>
-								</svg>
-							</a>
-						</li>
-
-						<li class="join__item">
-							<a class="join__link link" href="">
-								<svg class="join__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-twitter-1"></use>
-							</a>
-							</svg>
-						</li>
-
-						<li class="join__item">
-							<a class="join__link link" href="">
-								<svg class="join__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-facebook-1"></use>
-								</svg>
-							</a>
-						</li>
-
-						<li class="join__item">
-							<a class="join__link link" href="">
-								<svg class="join__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-linkedin-1"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-
+	
 				<form class="footer-form">
 					<p class="footer-form__title">Подпишитесь на рассылку</p>
 					<div class="footer-form__items">
 						<input class="footer-form__placeholder" type="email" name="footer-email" id="footer-email"
 							placeholder="E-mail">
-						<button class="footer-form__button" type="submit">Подписаться
+						<button class="footer-form__button  type=" submit">Подписаться
 							<svg class="footer-form__icon" width="24" height="24">
 								<use href="./images/icons.svg#icon-icon-send"></use>
 							</svg></button>
 					</div>
-
+	
 				</form>
-
 			</div>
-
+	
+	
+	
+		</div>
+	
 		</div>
 	</footer>
+
+
+
+	<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
