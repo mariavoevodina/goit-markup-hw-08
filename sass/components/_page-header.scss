@@ -12,6 +12,7 @@
 .header-mobile span {
   color: var(--primary-text-color);
 }
+
 .nav {
   display: flex;
   align-items: center;
@@ -38,10 +39,14 @@
 
 .menu-info {
   padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 .site-nav-mob {
-  margin: 0 0 300px;
+  margin: 0 0 40px;
 
   &__item {
     margin: 0 0 36px;
@@ -139,6 +144,7 @@
     0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
   width: 100%;
+  z-index: 1;
 }
 
 .menu-container.is-open {
